@@ -16,9 +16,9 @@ export const ProductShowcase = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip"
+      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip "
     >
-      <div className="container">
+      <div className="container ">
         <div className="section-heading">
           <div className="flex justify-center">
             <div className="tag">Boost your productivity</div>
@@ -33,14 +33,14 @@ export const ProductShowcase = () => {
           </p>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative max-w-[1200px] mx-auto">
         <Image src={productImage} alt="Product Image" className="mt-10" />
         <motion.img
           src={pyramidImage.src}
           alt="Pyramid Image"
           width={262}
           height={262}
-          className="hidden md:block absolute -right-28 -top-28"
+          className="hidden md:block absolute -right-28 -top-28 drop-shadow-2xl"
           style={{
             translateY,
           }}
@@ -50,7 +50,7 @@ export const ProductShowcase = () => {
           alt="Tube Image"
           height={248}
           width={248}
-          className="hidden md:block absolute -left-28 bottom-28"
+          className="hidden md:block absolute -left-28 bottom-28 drop-shadow-2xl"
           style={{
             translateY,
           }}
